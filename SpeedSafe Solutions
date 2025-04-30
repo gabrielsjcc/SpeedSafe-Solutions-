@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Speedsafe Solutions</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
+    header { background: #111; color: #fff; padding: 1rem; text-align: center; }
+    nav a { color: #fff; margin: 0 10px; text-decoration: none; }
+    main { padding: 2rem; max-width: 800px; margin: auto; background: #fff; }
+    footer { background: #222; color: #ccc; text-align: center; padding: 1rem; margin-top: 2rem; }
+    .form-section input, .form-section textarea { width: 100%; padding: 10px; margin: 5px 0; }
+    .form-section button { background: #008000; color: white; padding: 10px; border: none; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Speedsafe Solutions</h1>
+    <nav>
+      <a href="#home">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#formulario">Solicitar Coleta</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h2>Entregas rápidas com segurança!</h2>
+      <p>Coletamos e entregamos qualquer produto viável para moto. Rápido, simples e com pagamento via Pix.</p>
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre a Speedsafe</h2>
+      <p>Atendemos Campinas e região com agilidade e responsabilidade. Nossa missão é facilitar a logística do seu dia a dia.</p>
+    </section>
+
+    <section id="formulario" class="form-section">
+      <h2>Solicitar Coleta</h2>
+      <form id="coletaForm">
+        <input type="text" placeholder="Nome completo" required />
+        <input type="tel" placeholder="Telefone" required />
+        <input type="text" placeholder="Endereço de coleta" required />
+        <input type="text" placeholder="Endereço de entrega" required />
+        <textarea placeholder="Descrição do pacote" required></textarea>
+        <textarea placeholder="Observações (opcional)"></textarea>
+        <p><strong>Valor fixo: R$ 15,00</strong></p>
+        <p>Chave Pix: <strong>gabrieldosantosalves@pix.com</strong></p>
+        <p>Após o pagamento, clique abaixo:</p>
+        <button type="button" onclick="confirmarPagamento()">Já paguei</button>
+      </form>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>WhatsApp: <strong>(19) 99149-5594</strong></p>
+      <p>Email: speedsafe@email.com</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Speedsafe Solutions © 2025 - Todos os direitos reservados</p>
+  </footer>
+
+  <script>
+    function confirmarPagamento() {
+      alert("Pagamento confirmado! Você será notificado via WhatsApp.");
+      // Aqui poderia ser integrada uma chamada a backend ou API do WhatsApp futuramente
+    }
+  </script>
+</body>
+</html>
